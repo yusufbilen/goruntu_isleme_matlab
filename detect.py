@@ -2,8 +2,8 @@
 """
 Run YOLOv5 detection inference on images, videos, directories, globs, YouTube, webcam, streams, etc.
 
-Usage - sources:
-    $ python detect.py --weights yolov5s.pt --source 0                               # webcam
+Usage - sources: # verilerin nereden aldığını belirtmektedir
+    $ python detect.py --weights yolov5s.pt --source 0                               # webcam  # bu komut detect.py dosyasında ki nesne tanımlama modülünün çalışmasını sağlar.
                                                      img.jpg                         # image
                                                      vid.mp4                         # video
                                                      screen                          # screenshot
@@ -13,6 +13,8 @@ Usage - sources:
                                                      'path/*.jpg'                    # glob
                                                      'https://youtu.be/Zgi9g1ksQHc'  # YouTube
                                                      'rtsp://example.com/media.mp4'  # RTSP, RTMP, HTTP stream
+
+# bu kdolamalar çalışacak olan yolov5 modülünün çalıştırdığı ve kapsadığı dosya veya bağlamtıların modellerini temsil ediyor.
 
 Usage - formats:
     $ python detect.py --weights yolov5s.pt                 # PyTorch
@@ -27,6 +29,7 @@ Usage - formats:
                                  yolov5s_edgetpu.tflite     # TensorFlow Edge TPU
                                  yolov5s_paddle_model       # PaddlePaddle
 """
+# Bu komutla, YOLOv5 modelinin farklı formatlarda dönüştürülmüş versiyonlarını kullanarak nesne ayrıntılarını gerçekleştirmeye olanak tanır
 
 import argparse
 import os
